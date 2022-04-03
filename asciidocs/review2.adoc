@@ -1,0 +1,18 @@
+= Review 1
+Gerald Unterrainer
+1.0, 2022-04-03
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+== Resizing
+Der Burger-Button zum Verstecken der Navbar ist bei großen Bildschirmgrößen nutzlos.
+Deswegen blendet man ihn eigentlich erst ein, wenn man die Navbar aus Platzgründen ausblendet.
+
+Dadurch verliert man zwar die Möglichkeit die Navbar auszublenden, obwohl man genug Platz hat, aber diese Option wird eigentlich nie benötigt.
+
+Beim Resizen    -> zu klein     -> Navbar ausblenden    -> Burger-Button einblenden.
+                -> groß genug   -> Navbar einblenden    -> Burger-Button ausblenden.
