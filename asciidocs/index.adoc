@@ -15,6 +15,8 @@ ifdef::backend-html5[]
 //toc::[]
 
 === https://unterrainerinformatik.github.io/htl_review_beeyond/review1[Review 1]
+Alle Vorschläge wurden bearbeitet und exzellent gelöst.
+Die Umschaltung von Light- auf Dark-Mode und auch die Anzeige der Modi funktioniert einwandfrei.
 
 === https://unterrainerinformatik.github.io/htl_review_beeyond/review2[Review 2]
 In progress...

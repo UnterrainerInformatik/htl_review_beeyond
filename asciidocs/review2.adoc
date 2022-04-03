@@ -8,6 +8,12 @@ ifndef::backend[:backend: html5]
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
 
+== Allgemein
+Die Position des Back-Buttons wechselt von Seite zu Seite (mal links, mal rechts).
+
+Man hat die Möglichkeit mit max-width eine maximale Größe für Elemente anzugeben (Beispiel: Text-Felder in einem Form).
+Das würde Leuten mit großen Bildschirmen die Möglichkeit geben die Zeilen besser verfolgen zu können und sie im Kopf zu verbinden. Außerdem würden dadurch manche Controls (next-Buttons usw.) nicht so derartig aus dem Fokus des Benutzers rutschen.
+
 == Resizing
 Der Burger-Button zum Verstecken der Navbar ist bei großen Bildschirmgrößen nutzlos.
 Deswegen blendet man ihn eigentlich erst ein, wenn man die Navbar aus Platzgründen ausblendet.
@@ -16,3 +22,116 @@ Dadurch verliert man zwar die Möglichkeit die Navbar auszublenden, obwohl man g
 
 Beim Resizen    -> zu klein     -> Navbar ausblenden    -> Burger-Button einblenden.
                 -> groß genug   -> Navbar einblenden    -> Burger-Button ausblenden.
+
+== Blueprint Page (Set content)
+
+=== Größe der Felder
+Das Help-Popover am rechten Ende der Felder ist löblich.
+Allerdings auch schwer zu erreichen ab einer gewissen Bildschirmgröße.
+Deshalb versieht man diese Felder auch mit einer max-width.
+
+image:2/blueprint-size.png[]
+
+=== Help-Popovers
+Der Inhalt der Hilfe darf ruhig etwas länger ausfallen...
+Fragen, die sich stellen:
+
+* Warum 2 Image-Felder?
+
+* Was ist die genaue Syntax der Database-URL? (ev. ein Beispiel)
+
+image:2/blueprint-popovers.png[]
+
+=== 'Fill out'
+Richtig wäre 'fill in the information'.
+Oder aber auch 'fill out the form'.
+
+== Blueprint Page (Fill out information)
+Hier wäre es nett, wenn man als kurzen Satz am Seitenbeginn erklären würde, dass man das ausfüllt, damit ein Lehrer das absegnet.
+
+=== Größe der Felder
+Das selbe wie im vorigen Step (max-width).
+
+=== Klassen-Feld
+Ist ein Textfeld. Sollte ein Select-Feld sein, wenn möglich (ich weiß... ist schwierig... ich sag's trotzdem :) )
+
+=== To-Feld
+Was ist das? Was heißt 'To' in diesem Kontext?
+
+=== Create-Button
+Es gibt keinen visuellen Busy-Indikator. Der Button wird nach erstmaliger Betätigung auch nicht deaktiviert.
+Deswegen ist es schwierig zu sagen, ob etwas nicht funktioniert. Der Benutzer wird im 'Limbo' hängengelassen.
+Dazu kommt, dass diese Aktion auch noch wirklich länger dauert.
+Lösung:
+
+* Mindestens Button nach Drücken deaktivieren
+
+* Besser noch einen Progressbar ohne Wert einblenden
+
+== Profile Page - Blueprints
+
+=== ID und Status
+Angezeigt werden hier nur ID und Status. Warum nicht der Name des Projektes? Ich hab die ID nach dem Anlegen noch nicht gesehen (wird vor mir versteckt). Dadurch kann ich das neu angelegte Projekt auf dieser Seite auch nicht identifizieren.
+
+=== Date-Range Picker
+Der ist extrem schwer wieder zu löschen. Eventuell gibt's da eine Einstellung, die ein 'X' einblendet oder so, damit ich den Filter wieder einfach loswerden kann, wenn ich möchte.
+
+=== View-Workflow
+Titel ist laut Breadcrumbs: Profile > Review
+Richtiger wäre: Profile > View
+Das würde auch besser zeigen, dass das jetzt readonly ist.
+Ich finde aber auch, dass der readonly-Modus hier besser kommuniziert gehört (ich hab mich ständig gewundert, warum ich nix mehr ändern kann :) )
+
+Editor in Content passt.
+
+==== Next-Button
+Soweit ich das verstehe, kann ich mir im Profile all meine abgesetzten Requests ansehen.
+Der Next-Button, der aktiviert wird, nachdem ich in der Liste auf eine Zeile geklickt habe, ist aber zu subtil.
+Ich wäre nie drauf gekommen, dass ich in der Table selecten kann.
+Und den Button hab ich auch nicht gleich gesehen.
+Lösung: Ev. View-Buttons in die Table reinmachen (für jede Zeile einen; FAB Button mit View-Icon)
+
+==== Request-Button
+Was macht der Request-Button?
+Der ist immer ausgegraut.
+Edit:
+Ich sehe gerade, dass der Sinn macht, wenn ich ein denial bekomme und nach Änderungen re-submitten will.
+Das ist gut. Aber dann sollte man den Button anders nennen (Resubmit oder so) und erst einblenden, wenn er gebraucht wird. (Also ausblenden, wenn er nicht gebraucht wird. Es hilft mir nichts zu wissen, dass es den später geben würde.).
+
+==== Information
+Wieder schwer lesbar auf breiten Bildschirmen (max-width).
+
+== Profile Page - Namespaces
+Hier kann ich nichts machen. Ist also eine reine Status-Seite. Kein Problem.
+Die Überschrift sagt: 'Your namespaces...', aber ich sehe ALLE Namespaces von ALLEN Usern.
+Das ist vielleicht so, weil ich mit dem Admin drinnen bin.
+
+== Management
+Dieselben Probleme wie Profile-Blueprints (max-width).
+
+=== Request-Button
+Was macht der Request-Button?
+Der ist immer ausgegraut.
+
+==== Finish-Button
+Was macht der Finish-Button?
+Der ist immer ausgegraut.
+
+== Template Page
+Ab hier höre ich auf auf die max-width aufmerksam zu machen. Das zieht sich über das ganze Projekt durch.
+
+Templates können nicht editiert werden. Nur neu angelegt.
+
+=== Create a new Template - Fill Out Wildcard Fields
+'Fill in'.
+Es gibt keinen Back-Button oder Next-Button.
+
+Dadurch ist der Step 'Specify Data' auch nicht zu erreichen.
+
+== Namespace Page
+Ich kann Namespaces anlegen und den Namen angeben, zusammen mit allen Usern.
+Aber ich kann das dann nicht mehr ändern.
+Oder löschen.
+
+== Constraint Page
+Ist leer :)
