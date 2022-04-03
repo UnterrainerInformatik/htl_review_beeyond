@@ -16,5 +16,5 @@ ifdef::backend-html5[]
 
 === https://unterrainerinformatik.github.io/htl_review_beeyond/review1[Review 1]
 
-=== Review 2
+=== https://unterrainerinformatik.github.io/htl_review_beeyond/review2[Review 2]
 In progress...
