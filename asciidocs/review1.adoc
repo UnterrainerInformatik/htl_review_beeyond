@@ -1,0 +1,12 @@
+= Asciidoctor-Features
+Gerald Unterrainer
+1.0, 2022-01-31
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+== Allgemeines
+
