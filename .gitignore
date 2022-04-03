@@ -11,3 +11,5 @@ gh-pages/
 .env
 *.zip
 asciidocs.demo/
+
+*.swp
