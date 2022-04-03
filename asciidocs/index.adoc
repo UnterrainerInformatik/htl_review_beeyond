@@ -1,6 +1,6 @@
-= My Project
-firstname lastname
-1.0.0, yyyy-mm-dd: Some notes
+= UI / UX Reviews of Beeyond
+Gerald Unterrainer
+1.0, 2022-01-31
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -14,8 +14,7 @@ ifdef::backend-html5[]
 // print the toc here (not at the default position)
 //toc::[]
 
-== Header 1
+=== https://unterrainerinformatik.github.io/htl_review_beeyond/review1[Review 1]
 
-
-=== Header 2
-
+=== Review 2
+In progress...

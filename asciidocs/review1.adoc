@@ -1,4 +1,4 @@
-= Asciidoctor-Features
+= Review 1
 Gerald Unterrainer
 1.0, 2022-01-31
 ifndef::sourcedir[:sourcedir: ../src/main/java]
@@ -8,5 +8,31 @@ ifndef::backend[:backend: html5]
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
 
-== Allgemeines
+== Navbar
+
+=== Theming
+Dark-Theme ändert die Navbar nicht.
+
+=== Raumaufteilung
+Wie schon von Dir erwähnt könnte man die Navbar ab einer gewissen Breite verschwinden lassen und durch einen Burger-Button am linken oberen Rand ersetzen, der wiederum die Navbar öffnet, wenn sie gebraucht wird.
+
+== Blueprint Page
+
+=== Theming
+Ist nicht theme-based (die 'create a new Blueprint' Card ändert die Farbe nicht, wenn ich das Theme wechsle).
+
+=== Select Type
+Die Blueprint -> Select Type -> 'Custom' und 'Template' Buttons reagieren nicht sooo toll auf Größenänderungen.
+
+image:1/blueprint1.png[]
+
+image:1/blueprint2.png[]
+
+== Profile Page
+Beim Resizing der Profile-Seite verschwinden Buttons rechts
+
+image:1/profile1.png[]
+
+== Routing
+Routing funktioniert nicht so ganz… Reload von beliebiger Sub-Seite bringt ein 404-Not Found.
 
